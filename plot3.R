@@ -11,7 +11,7 @@ power$Date_Time<-strptime(power$Date_Time, "%d/%m/%Y %H:%M:%S",tz="US/Pacific")
 sel_power<-subset(power,as.Date(power$Date,"%d/%m/%Y")>=as.Date("1/2/2007","%d/%m/%Y") & as.Date(power$Date,"%d/%m/%Y")<=as.Date("2/2/2007","%d/%m/%Y"))
 
 
-##plot global_active_power vs time
+##plot sub metering power vs time
 with(sel_power,plot(Date_Time,Sub_metering_1 ,main = "",type="n",ylab = "Energy sub metering", xlab = ""))
 with(sel_power,lines(Date_Time,Sub_metering_1,col="black"))
 with(sel_power,lines(Date_Time,Sub_metering_2,col="red"))
