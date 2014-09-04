@@ -34,4 +34,5 @@ with(sel_power,lines(Date_Time,Global_reactive_power))
 ##output plot to a png of 480 by 480 pixels
 dev.copy(png,"plot4.png", width=480, height=480)
 dev.off()
+
 }
